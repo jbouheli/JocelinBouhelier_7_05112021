@@ -1,0 +1,33 @@
+@import "../../variables.scss";
+
+.picture {
+  height: 400px;
+  img {
+    height: 400px;
+    object-fit: cover;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.more-option {
+  position: relative;
+  &-list {
+    position: absolute;
+    right: 15px;
+    display: none;
+    border: 1px solid;
+    padding: 10px;
+    background: $color-primary-light;
+    width: max-content;
+    justify-items: baseline;
+    button {
+      background-color: transparent;
+      cursor: pointer;
+      border: none;
+      margin-top: 5px;
+    }
+  }
+}
